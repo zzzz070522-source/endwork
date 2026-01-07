@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末作業</title>
+<style>
+  /* 設定 class 為 title 的元素文字置中 */
+  .title {
+    text-align: center;
+  }
+
+  /* 設定一級標題 (h1) 的文字顏色為淺橘色，並加上黃色與藍色的發光效果 (多層次文字陰影) */
+  h1 {
+    color: rgb(255, 197, 72);
+    text-shadow: 0 0 3px #ffff00, 0 0 5px #0000ff;
+  }
+
+  /* 設定二級標題 (h2) 的文字顏色為灰色，並加上黃色的擴散陰影 */
+  h2 {
+    color: grey;
+    text-shadow: 2px 2px 8px #ffff00;
+  }
+
+  /* 設定三級標題 (h3) 的文字顏色為深灰色 */
+  h3 {
+    color: rgb(88, 88, 88);
+  }
+
+  /* 設定四級標題 (h4) 的文字顏色為同上的深灰色 */
+  h4 {
+    color: rgb(88, 88, 88);
+  }
+
+  /* 設定表格單元格 (td) 的文字顏色為灰色 */
+  td {
+    color: grey;
+  }
+
+  /* 設定水平線 (hr) 的樣式：移除預設邊框、高度 3px、背景橘黃色、寬度 70% 且上下間隔 25px 並水平置中 */
+  hr {
+    border: none;
+    height: 3px;
+    background-color: rgb(255, 208, 106);
+    width: 70%;
+    margin: 25px auto;
+  }
+
+  /* 設定中間水平線的寬度為 60% */
+  .middle-hr {
+    width: 60%;
+  }
+
+  /* 設定上方水平線的寬度為 80% */
+  .top-hr {
+    width: 80%;
+  }
+
+  /* 設定文字顏色與紅色發散陰影 */
+  .scary-food-title {
+    color: grey;
+    text-shadow: 2px 2px 8px #ff000075;
+  }
+
+  /* 設定文字顏色與粉紫色發散陰影 */
+  .vedio-title {
+    color: grey;
+    text-shadow: 2px 2px 8px #ff00aa8e;
+  }
+
+  /* 設定顏色深灰、無陰影、文字置中 */
+  .last-title {
+    color: rgb(80, 80, 80);
+    text-shadow: 2px 2px 8px #ff00aa00;
+    text-align: center;
+  }
+
+  /* 設定一般表格樣式：自動水平置中、寬度 60%、文字置中、下方間距 50px */
+  table {
+    margin: 0 auto;
+    border-collapse: collapse; /* 讓表格邊框合併為單一線條 */
+    width: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  /* 設定特定的「員工表格」樣式：自動左邊距，右邊距固定 300px (使其偏右) */
+  .staff-table {
+    margin-left: auto;
+    margin-right: 300px;
+  }
+
+  /* 設定食物圖片的大小與裁切方式 */
+  .food-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover; /* 確保圖片填滿容器且不變形 */
+    border: 1px solid #ccc; /* 淺灰色邊框 */
+    transition: transform 0.3s ease; /* 設定變形效果的過渡時間為 0.3 秒，讓放大過程平滑 */
+  }
+
+  /* 當滑鼠移到食物圖片上時，執行放大 1.05 倍的動畫 */
+  .food-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* 增加表格單元格的內邊距，讓內容不擁擠 */
+  td {
+    padding: 10px;
+  }
+
+  /* 設定段落 (p) 樣式：文字加粗、置中、深橘色、字體放大並設定上下間距 25px */
+  p {
+    font-weight: bold;
+    text-align: center;
+    color: #E65100;
+    font-size: 1.2em;
+    margin: 25px 0;
+  }
+
+  /* 設定超連結 (a) 為區塊元素，使其寬度佔滿並文字置中，增加上下內邊距 */
+  a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* 設定圖片連結類別：移除預設的超連結底線 */
+  .image-link {
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+    <h1 class="title">台灣小吃探險記</h1>
+    <hr class="top-hr">
+    <table>
+        <caption><h2> 美味的食物 </h2></caption>
+        <tr>
+            <td>
+                <a href="1.html" class="image-link">
+                    <img class="food-image" src="https://media.zenfs.com/en/yahoo__216/7327e3d0464579f69295aafd44b98bbf" title="點擊查看素材來源：豪邁厚切，香酥多汁的雞排" alt="雞排">
+                </a>
+            </td>
+            <td>
+                <a href="2.html" class="image-link">
+                    <img class="food-image" src="https://d2lswn7b0fl4u2.cloudfront.net/photos/pg-2-bubble-tea-1608310012.jpg" title="點擊查看素材來源：Q彈珍珠，醇厚奶香的珍珠奶茶" alt="珍珠奶茶">
+                </a>
+            </td>
+            <td>
+                <a href="3.html" class="image-link">
+                    <img class="food-image" src="https://img-global.cpcdn.com/recipes/8e3b354259cfc415/1200x630cq70/photo.jpg" title="點擊查看素材來源：金黃圓滾，越嚼越甜的地瓜球" alt="地瓜球">
+                </a>
+            </td>
+            <td>
+                <a href="4.html" class="image-link">
+                    <img class="food-image" src="https://resize-image.vocus.cc/resize?norotation=true&quality=80&url=https%3A%2F%2Fimages.vocus.cc%2Fc0cd869d-5697-4679-a963-91dec14472ce.jpg&width=740&sign=DIR0VKB_Mz1zzwiDOrhuvhIBfSx9AW921Vpc5hd3i9g" title="點擊查看素材來源：香甜滑順，天然滋味的木瓜牛奶" alt="木瓜牛奶">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td><h3>雞排</h3></td>
+            <td><h3>珍珠奶茶</h3></td>
+            <td><h3>地瓜球 </h3></td>
+            <td><h3>木瓜牛奶</h3></td>
+        </tr>
+        <tr>
+            <td>豪邁厚切，香酥多汁</td>
+            <td>Q彈珍珠，醇厚奶香</td>
+            <td>金黃圓滾，越嚼越甜</td>
+            <td>香甜滑順，天然滋味</td>
+        </tr>
+    </table>
+    <hr class="middle-hr">
+<p>
+    舌尖上的台灣之旅正式啟程！
+    <br>
+    讓我們跨越美食的界線，感受台灣這塊土地上，每一種滋味的文化與故事。
+</p>
+    <hr>
+      <table>
+        <caption><h2 class="scary-food-title"> 可怕的食物 </h2></caption>
+        <tr>
+            <td>
+                <a href="5.html" class="image-link">
+                    <img class="food-image" src="https://th.bing.com/th/id/R.45ed7f3adc915b67a2a71c925921f19c?rik=Nnam7mTu%2fXbaNQ&riu=http%3a%2f%2fimg1.bala.cc%2fallimg%2f2208%2f145I3AC-3.jpg&ehk=Hs6apbQqUiE1xOWXtwvZpSLNfDqesiiCPNUBaaXDUus%3d&risl=&pid=ImgRaw&r=0" title="聞臭食香，外酥內嫩的臭豆腐" alt="臭豆腐">
+                </a>
+            </td>
+            <td>
+                <a href="6.html" class="image-link">
+                    <img class="food-image" src="https://tokyo-kitchen.icook.network/uploads/recipe/cover/98306/f6395466375721c2.jpg" title="鐵質豐富，滋補養生的豬血" alt="豬血">
+                </a>
+            </td>
+            <td>
+                <a href="7.html" class="image-link">
+                    <img class="food-image" src="https://th.bing.com/th/id/OIP.5kyXpPnuaLot74k8MpbrJwHaEJ?w=311&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1" title="鮮嫩Q彈，口感絕佳的鴨血" alt="鴨血">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td><h3>臭豆腐</h3></td>
+            <td><h3>豬血糕</h3></td>
+            <td><h3>鴨血</h3></td>
+        </tr>
+        <tr>
+            <td>聞臭食香，外酥內嫩</td>
+            <td>口感扎實，越嚼越香</td>
+            <td>鮮嫩Q彈，口感絕佳</td>
+        </tr>
+    </table>
+        <hr>
+    <table>
+        <caption><h2 class="vedio-title"> 挑戰內容 </h2></caption>
+        <tr>
+            <td><iframe class="food-image" src="https://www.youtube.com/embed/MgFE1AINDBA?si=G0Bc3JaxPnhzvngL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="560" height="315" ></iframe></td>
+            <td><iframe class="food-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6047285123673!2d120.68295877698739!3d24.150515778399516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d68ef0dfe0d%3A0xadd02f1d10fe2a30!2zNDA06Ie65Lit5biC5YyX5Y2A5LiA5Lit6KGX!5e0!3m2!1szh-TW!2stw!4v1765385320609!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+        </tr>
+        <tr>
+            <td><h3>影片連結</h3></td>
+            <td><h3>地點</h3></td>
+        </tr>
+    </table>
+    <hr>
+    <table class="staff-table"> <h3 class="last-title"> 製作人員 </h3>
+        <tr>
+            <td><h4>網頁設計</h4></td>
+            <td>11414085彭姿晴、11414109張芷毓</td>
+        </tr>
+        <tr>
+            <td><h4>PPT製作、報告</h4></td>
+            <td>11414007江沐宸</td>
+        </tr>
+        <tr>
+            <td><h4>影片拍攝、剪輯</h4></td>
+            <td>11414013黃淨渝</td>
+        </tr>
+        <tr>
+            <td><h4>演出者-外國人</h4></td>
+            <td>11414040陳詠祺</td>
+        </tr>
+        <tr>
+            <td><h4>演出者-導遊</h4></td>
+            <td>11414046王薰潁</td>
+        </tr>
+    </table>
+    </body>
+</html>
